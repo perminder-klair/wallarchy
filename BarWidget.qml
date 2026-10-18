@@ -26,7 +26,7 @@ BarWidget {
 
   readonly property bool showLabel: setting("showLabel", false) === true
   readonly property string labelText: Model.singleLine(photo && photo.label ? photo.label : "", 24)
-  readonly property color foreground: bar ? bar.foreground : Color.foreground
+  readonly property color foreground: bar ? bar.barForeground : Color.foreground
   readonly property string fontFamily: bar ? bar.fontFamily : Style.font.family
   readonly property string tooltipText: Model.barTooltip({
     photo: photo,
